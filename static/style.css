@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+nav{
+    width: 107%;
+}
+#bg{
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+}
+
+h1{color: red;}
+
+h3{color: blue;}
+
+h2{color: red;}
+
+h5{font-family: Algerian;}
+
+
+
+body{
+    background: burlywood;
+}
+
+p{
+    text-align:justify;
+}
+
+table{
+    width: 30%;
+}
+
+
+
+
+
+

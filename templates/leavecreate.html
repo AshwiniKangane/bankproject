@@ -1,0 +1,29 @@
+{% extends 'navbar.html' %}
+
+{% block body %}
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>sdocform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  {% load static %}
+  {% csrf_token %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+</head>  
+<body id="bg" style="background-image: url('{% static 'bg2.jpg' %}')";>
+<h1>Add New Record of Staff |Leave</h1> 
+<form method="POST" class="post-form">  
+        {% csrf_token %}  
+        {{ form.as_p }} 
+        <button type="submit" class="btn btn-primary btn-md">Save</button>   
+    </form>  
+</body>  
+</html> 
+{% endblock %} 

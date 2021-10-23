@@ -1,0 +1,109 @@
+{% extends 'navbar.html' %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>benefits</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  {% load static %}
+  {% csrf_token %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">   
+
+</head>
+
+<body>
+  <div class="page-header">
+  <h1>Benefits</h1>
+  </div>
+   <!-- The image has scrolling behavior to left -->
+    <marquee  behavior="scroll" direction="right">        
+          <img src="static/bank.jpg"
+          alt="" height=50% width=30%> 
+          <img src="static/bank.jpg"
+          alt="" height=50% width=30%> 
+          <img src="static/bank.jpg"
+          alt="" height=50% width=30%> 
+          <img src="static/bank.jpg"
+          alt="" height=50% width=30%> 
+          <img src="static/bank.jpg"
+          alt="" height=50% width=30%> 
+    </marquee> 
+<div class="row">
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+
+<img src="static/cafeteria.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5><p class="card-text"><b><i>Cafeteria</i></b></p></h5>
+    </div>
+</div>
+  </div>
+
+
+<div class="col">
+    <div class="card" style="width: 18rem;">
+
+<img src="static/food.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5><p class="card-text"><b><i>Food</i></b></p></h5>
+  </div>
+</div>
+  </div>
+
+  
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+
+<img src="static/snack.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5><p class="card-text"><b><i>Snack</i></b></p></h5>
+</div>
+  </div>
+</div>
+
+<div class="col">
+    <div class="card" style="width: 18rem;">
+<img src="static/bus.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5><p class="card-text"><b><i>Transport</i></b></p></h5>
+    </div>
+</div>
+  </div>
+
+
+<div class="col">
+    <div class="card" style="width: 20rem;">
+
+<img src="static/health.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5><p class="card-text"><b><i>HealthInsurance</i></b></p></h5>
+  </div>
+</div>
+  </div>
+
+  
+
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+
+<img src="static/childcare.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5><p class="card-text"><b><i>DayCare</i></b></p></h5>
+  </div>
+</div>
+  </div>
+</body>
+</html>
+
+{% endblock %}
+
+
+

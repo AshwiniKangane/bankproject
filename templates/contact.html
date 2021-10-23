@@ -1,0 +1,33 @@
+{% extends 'navbar.html' %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	{% load static %}
+	{% csrf_token %}
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+</head>
+<body>
+	        <div class="page-header">
+               <h1> Contact </h1>
+            </div>
+
+            <h5><b><i> Get In Touch </i></b></h5><br>
+	        <ul>
+		    <li><h2>+919786220111</h2></li><br>
+	        <li><b><a href="">ashwini@gmail.com</a></b></li><br><br>
+            </ul>
+
+</body>
+</html>
+{% endblock %}

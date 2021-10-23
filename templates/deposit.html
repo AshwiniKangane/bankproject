@@ -1,0 +1,38 @@
+{% extends 'navbar.html' %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>balance|update</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  {% load static %}
+  {% csrf_token %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">   
+
+</head>
+
+<body>
+    <form method="POST">
+         {% csrf_token %}
+
+    <h1>balance|update</h1>
+        Enter account id:<input type="text" name="account_id"><br><br>
+        Enter the amount for deposit :<input type="text" name="deposit"><br><br>
+        <button type="submit" class="btn btn-success btn-md" >Save</button>
+
+    </form>
+</div>
+
+
+</body>
+</html>
+
+{% endblock %}
